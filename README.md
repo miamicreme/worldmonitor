@@ -1,5 +1,7 @@
 # World Monitor
 
+> MiamiCreme fork note: this fork keeps upstream World Monitor intact and adds a public-safe [`miamicreme/globalintel`](miamicreme/globalintel/README.md) module plan for converting global intelligence into SkillForge, EmpireOS, and DealFlow artifacts. The upstream source remains AGPL-3.0-only; do not copy this source into private EmpireOS without complying with the license or obtaining separate terms.
+
 **Real-time global intelligence dashboard** — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
 
 [![GitHub stars](https://img.shields.io/github/stars/koala73/worldmonitor?style=social)](https://github.com/koala73/worldmonitor/stargazers)
@@ -43,6 +45,29 @@
 </p>
 
 ![World Monitor Dashboard](docs/images/worldmonitor-7-mar-2026.jpg)
+
+---
+
+## MiamiCreme GlobalIntel Module
+
+This fork adds a public-safe module plan under [`miamicreme/globalintel`](miamicreme/globalintel/README.md).
+
+GlobalIntel is not a private EmpireOS implementation. It is a boundary layer for converting World Monitor-style global intelligence into reusable artifacts:
+
+- global intelligence briefs,
+- country risk briefs,
+- market risk briefs,
+- infrastructure and energy risk briefs,
+- DealFlow context briefs,
+- EmpireOS-safe alert summaries.
+
+Module docs:
+
+- [`miamicreme/globalintel/README.md`](miamicreme/globalintel/README.md)
+- [`miamicreme/globalintel/artifact-contract.md`](miamicreme/globalintel/artifact-contract.md)
+- [`miamicreme/globalintel/skillforge-adapter.md`](miamicreme/globalintel/skillforge-adapter.md)
+- [`miamicreme/globalintel/empireos-boundary.md`](miamicreme/globalintel/empireos-boundary.md)
+- [`miamicreme/globalintel/dealflow-boundary.md`](miamicreme/globalintel/dealflow-boundary.md)
 
 ---
 
@@ -204,12 +229,3 @@ See our [Security Policy](./SECURITY.md) for responsible disclosure guidelines.
   <a href="https://finance.worldmonitor.app">finance.worldmonitor.app</a> &nbsp;·&nbsp;
   <a href="https://commodity.worldmonitor.app">commodity.worldmonitor.app</a>
 </p>
-
-## Star History
-
-<a href="https://api.star-history.com/svg?repos=koala73/worldmonitor&type=Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=koala73/worldmonitor&type=Date&theme=dark" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=koala73/worldmonitor&type=Date" />
- </picture>
-</a>
