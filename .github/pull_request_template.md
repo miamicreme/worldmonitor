@@ -11,6 +11,7 @@
 - [ ] Refactor / code cleanup
 - [ ] Documentation
 - [ ] CI / Build / Infrastructure
+- [ ] GlobalIntel module / adapter docs
 
 ## Affected areas
 
@@ -21,14 +22,39 @@
 - [ ] Desktop app (Tauri)
 - [ ] API endpoints (`/api/*`)
 - [ ] Config / Settings
+- [ ] MiamiCreme GlobalIntel module
+- [ ] SkillForge adapter boundary
+- [ ] EmpireOS boundary
+- [ ] DealFlow boundary
 - [ ] Other: <!-- specify -->
 
-## Checklist
+## Protection Checklist
+
+- [ ] No API keys, secrets, tokens, or `.env` files were committed.
+- [ ] No private EmpireOS logic, personal dashboards, private memory, or private decision logs were added.
+- [ ] No proprietary DealFlow scoring formulas, buyer lists, CRM records, underwriting assumptions, or private outreach scripts were added.
+- [ ] Upstream World Monitor attribution and AGPL-3.0-only license notices remain intact.
+- [ ] Any GlobalIntel addition is public-safe and does not imply ownership of official World Monitor branding.
+- [ ] Any EmpireOS or DealFlow integration is documented as a boundary/adapter unless it is intentionally public-safe.
+- [ ] The change follows `PROTECTION.md`.
+
+## Artifact Quality Checklist
+
+For GlobalIntel artifacts or docs:
+
+- [ ] Decision supported is clear.
+- [ ] Region/topic scope is clear.
+- [ ] Risk level is stated.
+- [ ] Confidence level is stated.
+- [ ] Evidence or source description is included.
+- [ ] Assumptions/gaps are visible.
+- [ ] Next best action is specific.
+
+## Original World Monitor Checklist
 
 - [ ] Tested on [worldmonitor.app](https://worldmonitor.app) variant
 - [ ] Tested on [tech.worldmonitor.app](https://tech.worldmonitor.app) variant (if applicable)
 - [ ] New RSS feed domains added to `api/rss-proxy.js` allowlist (if adding feeds)
-- [ ] No API keys or secrets committed
 - [ ] TypeScript compiles without errors (`npm run typecheck`)
 
 ## Documentation Alignment Checklist
@@ -40,6 +66,10 @@
 - [ ] Generated docs regenerated from proto where applicable
 - [ ] Fixture-backed examples recomputed
 - [ ] Redis writers/readers enumerated for every documented key
+
+## License / Safety Notes
+
+Mention any license, attribution, privacy, or data-boundary concerns reviewers should know.
 
 ## Screenshots
 
